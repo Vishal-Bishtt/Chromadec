@@ -7,8 +7,8 @@ const AboutUsLayout = () => {
             display: 'flex',
             flexDirection: 'column',
             minHeight: '100vh',
-            background: 'linear-gradient(135deg, #232526 0%, #414345 100%)',
-            color: '#fff',
+            background: '#d5e0f9',
+            color: '#222',
             fontFamily: 'Poppins, sans-serif'
         }}>
             <Header />
@@ -17,12 +17,14 @@ const AboutUsLayout = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
-                maxWidth: '900px',
-                margin: '40px auto 0 auto',
-                background: 'rgba(30,30,30,0.85)',
+                width: '100%',
+                maxWidth: '100vw',
+                margin: '40px 0 0 0',
+                background: '#d5e0f9',
                 borderRadius: '18px',
-                boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
-                padding: '36px 28px'
+                boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.10)',
+                padding: '36px 5vw',
+                boxSizing: 'border-box'
             }}>
                 <h1 style={{
                     textAlign: 'center',
@@ -30,11 +32,11 @@ const AboutUsLayout = () => {
                     fontSize: '2.5rem',
                     letterSpacing: '2px',
                     marginBottom: '30px',
-                    color: '#ffb347',
-                    textShadow: '0 2px 8px #0008'
+                    color: '#3b5cb8',
+                    textShadow: '0 2px 8px #b6c8f3'
                 }}>OUR STORY</h1>
                 <h3 style={{
-                    color: '#ffd700',
+                    color: '#4f6fdc',
                     fontSize: '1.5rem',
                     marginTop: '24px'
                 }}>Mission</h3>
@@ -43,7 +45,7 @@ const AboutUsLayout = () => {
                     lineHeight: '1.8',
                     margin: '12px 0 24px 0',
                     textAlign: 'justify',
-                    background: 'rgba(255,255,255,0.03)',
+                    background: '#d5e0f9',
                     borderRadius: '8px',
                     padding: '14px 18px'
                 }}>
@@ -54,11 +56,11 @@ const AboutUsLayout = () => {
                     community where artists can connect with like-minded individuals, exchange ideas, and
                     find collaboration opportunities. Through Chromadec, artists gain the exposure they 
                     deserve, reaching a global audience that appreciates and celebrates the beauty of their 
-                    creations. Whether you’re an artist or an art enthusiast, Chromadec is a place where 
+                    creations. Whether you're an artist or an art enthusiast, Chromadec is a place where 
                     creativity thrives, and art becomes a powerful force for change.
                 </p>
                 <h3 style={{
-                    color: '#ffd700',
+                    color: '#4f6fdc',
                     fontSize: '1.5rem',
                     marginTop: '24px'
                 }}>Vision</h3>
@@ -67,7 +69,7 @@ const AboutUsLayout = () => {
                     lineHeight: '1.8',
                     margin: '12px 0 0 0',
                     textAlign: 'justify',
-                    background: 'rgba(255,255,255,0.03)',
+                    background: '#d5e0f9',
                     borderRadius: '8px',
                     padding: '14px 18px'
                 }}>

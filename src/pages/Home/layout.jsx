@@ -47,7 +47,7 @@ const Layout = () => {
         <div className="nav">
           <Header />
         </div>
-        {/* Remove the <body> tag and just use a div instead */}
+        {}
         <div>
           <button
             className={`menu-btn${sidebarOpen ? ' hide' : ''}`}
@@ -66,11 +66,10 @@ const Layout = () => {
               &times;
             </button>
             <div className="sidebar-buttons">
+            <button id="Home">Home</button>
               <button id="About" onClick={handleAboutClick}>About</button>
-              <button id="Home">Home</button>
               <button id="Services" onClick={handleServiceClick}>Services</button>
               <button id="Contact">Contact</button>
-              <button id="career">Career</button>
             </div>
           </div>
 
@@ -167,7 +166,14 @@ const Layout = () => {
             </p>
             <br></br>
             <br></br>
-            <p>Currently available in Bangalore urban</p>
+            <p>
+              Currently available in Bangalore urban
+              <img 
+                src="/location.png" 
+                alt="Location" 
+                style={{ marginLeft: '4px', verticalAlign: 'middle', height: '18px',marginTop: '-2px' }} 
+              />
+            </p>
           </div>
         </div>
         <Footer />

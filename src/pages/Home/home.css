@@ -249,7 +249,7 @@
   padding: 10px 24px;
   border: none;
   border-radius: 20px;
-  background: linear-gradient(90deg,#4f46e5,#6366f1);
+  background: linear-gradient(90deg,#85a6ed,#6366f1);
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -258,7 +258,7 @@
   transition: background 0.2s, transform 0.2s;
 }
 .service-btn:hover {
-  background: linear-gradient(90deg,#6366f1,#4f46e5);
+  background: linear-gradient(90deg,#6366f1,#85a6ed);
   transform: scale(1.07);
 }
 
