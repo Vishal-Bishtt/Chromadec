@@ -7,7 +7,7 @@ const services = [
         number: "01",
         title: "Portrait Painting",
         imgAlt: "Portrait Painting Service",
-        imgSrc: "/api/placeholder/600/600",
+        imgSrc: "/protait.jpg",
         desc: [
             "Our skilled artists capture the essence and personality of your subjects through stunning portrait paintings. We work with various mediums including oils, acrylics, and watercolors to create timeless pieces that tell your story.",
             "From individual portraits to family compositions, we ensure every detail is perfectly rendered to create a lasting memory."
@@ -22,7 +22,7 @@ const services = [
         number: "02",
         title: "Landscape Painting",
         imgAlt: "Landscape Painting Service",
-        imgSrc: "/api/placeholder/600/600",
+        imgSrc: "/landscape.jpg",
         desc: [
             "Transform your favorite scenic views into beautiful landscape paintings. Our artists expertly capture the beauty of nature, from serene countryside scenes to dramatic urban landscapes.",
             "Each painting is crafted to bring the atmosphere and emotion of the location to life, creating a stunning piece of art for your space."
@@ -37,7 +37,7 @@ const services = [
         number: "03",
         title: "Sculptures",
         imgAlt: "Sculpture Service",
-        imgSrc: "/api/placeholder/600/600",
+        imgSrc: "/sculputers.jpg",
         desc: [
             "Our sculptors create unique three-dimensional artworks using various materials including clay, metal, wood, and stone. Each piece is carefully crafted to bring your vision to life in tactile form.",
             "Whether you're looking for abstract pieces or realistic figures, we can create sculptures that make powerful statements in any space."
@@ -52,7 +52,7 @@ const services = [
         number: "04",
         title: "Wall Painting",
         imgAlt: "Wall Painting Service",
-        imgSrc: "/api/placeholder/600/600",
+        imgSrc: "/wall-paintings.jpg",
         desc: [
             "Transform your spaces with our professional wall painting services. From murals to decorative finishes, we create stunning wall art that adds character and style to any room.",
             "Our artists work with you to design and execute wall paintings that complement your space and reflect your personal style."
@@ -67,7 +67,7 @@ const services = [
         number: "05",
         title: "Pencil & Sketch Drawing",
         imgAlt: "Pencil Drawing Service",
-        imgSrc: "/api/placeholder/600/600",
+        imgSrc: "/sketch.jpg",
         desc: [
             "Our detailed pencil and sketch drawings capture moments with incredible precision and artistry. Using various techniques and materials, we create striking black and white or tonal artwork.",
             "Perfect for portraits, architectural drawings, or creative illustrations, our sketches bring subtle beauty to any subject."
@@ -268,40 +268,84 @@ const Cummission = () => (
                 right: auto;
             }
             @media (max-width: 992px) {
+                .container {
+                    padding: 1rem;
+                }
                 .service-section, 
                 .service-section:nth-child(even) {
                     flex-direction: column;
+                    margin: 3rem 0;
                 }
                 .service-image {
-                    min-height: 250px;
-                }
-                .service-content {
-                    padding: 2rem;
-                }
-                .service-number {
-                    top: 1rem;
-                    right: 1rem;
-                    font-size: 4rem;
-                }
-                .service-section:nth-child(even) .service-number {
-                    left: 1rem;
-                }
-            }
-            @media (max-width: 576px) {
-                .heading h1 {
-                    font-size: 2.2rem;
-                }
-                .heading p {
-                    font-size: 1rem;
-                }
-                .service-content h2 {
-                    font-size: 1.7rem;
+                    min-height: 200px;
                 }
                 .service-content {
                     padding: 1.5rem;
                 }
                 .service-number {
-                    font-size: 3rem;
+                    top: 1rem;
+                    right: 1rem;
+                    font-size: 3.5rem;
+                }
+                .heading {
+                    padding: 2rem 0;
+                }
+            }
+            @media (max-width: 768px) {
+                .heading h1 {
+                    font-size: 2.4rem;
+                }
+                .service-content h2 {
+                    font-size: 1.8rem;
+                }
+                .service-content p {
+                    font-size: 1rem;
+                }
+                .feature-item {
+                    margin-bottom: 0.6rem;
+                }
+            }
+            @media (max-width: 576px) {
+                .heading h1 {
+                    font-size: 2rem;
+                }
+                .heading p {
+                    font-size: 0.9rem;
+                }
+                .service-content h2 {
+                    font-size: 1.5rem;
+                }
+                .service-content {
+                    padding: 1.2rem;
+                }
+                .service-number {
+                    font-size: 2.5rem;
+                }
+                .feature-icon {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 0.7rem;
+                }
+                .cta-button {
+                    padding: 0.6rem 1.5rem;
+                    font-size: 0.9rem;
+                }
+                .service-image {
+                    min-height: 180px;
+                }
+            }
+            @media (max-width: 400px) {
+                .heading h1 {
+                    font-size: 1.8rem;
+                }
+                .service-content h2 {
+                    font-size: 1.3rem;
+                }
+                .service-image {
+                    min-height: 150px;
+                }
+                .service-number {
+                    font-size: 2rem;
                 }
             }
         `}</style>
