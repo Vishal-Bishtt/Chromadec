@@ -76,7 +76,8 @@ const Layout = () => {
           <div className={`sidebar-overlay${sidebarOpen ? ' show' : ''}`} onClick={() => setSidebarOpen(false)}></div>
           
           <div className="tagline">
-            <p>WHERE ARTISTIC VISION MEETS{' '}
+            <p>
+              <span>WHERE ARTISTIC VISION MEETS</span>
               <span className="word-wrapper">
                 <span className={`changing-word ${isTransitioning ? 'fade' : ''}`}>
                   {currentWord}
