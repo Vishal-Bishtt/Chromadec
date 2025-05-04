@@ -366,15 +366,16 @@
 @media (max-width: 1345px) {
   .tagline p {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;  
   }
   
   .word-wrapper {
     margin-left: 0;
+    margin-top: -12px;  /* added negative margin to reduce space */
     display: block;
     text-align: center;
-  }
-  
+  }                                       
+         
   .changing-word {
     display: block;
     text-align: center;
@@ -386,6 +387,12 @@
     font-size: 3rem;
   }
   .welcome p:last-child {
+    font-size: 1.3rem;
+  }
+  .about-section h2 {
+    font-size: 3rem;
+  }
+  .about-section p {
     font-size: 1.3rem;
   }
 }
@@ -437,6 +444,15 @@
   }
   .welcome p:last-child {
     font-size: 1.2rem;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+  .about-section p {
+    font-size: 1.2rem;
+  }
+  .about-section {
+    height: 300px;
   }
 }
 
@@ -515,6 +531,16 @@
     font-size: 1rem;
     margin: 10px 5px;
   }
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .about-section p {
+    font-size: 1rem;
+  }
+  .about-section {
+    height: 250px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -548,5 +574,16 @@
   .welcome p:last-child {
     font-size: 0.9rem;
     margin: 8px 3px;
+  }
+  .about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .about-section p {
+    font-size: 0.9rem;
+  }
+  .about-section {
+    height: 200px;
+    padding: 30px 15px;
   }
 }

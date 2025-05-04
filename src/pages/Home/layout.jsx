@@ -165,8 +165,7 @@ const Layout = () => {
               Through Chromadec commissions, curated events, 
               and expert instruction, we aim to inspire and elevate the art world.<br />
             </p>
-            <br></br>
-            <br></br>
+            
             <p>
               Currently available in Bangalore urban
               <img 
