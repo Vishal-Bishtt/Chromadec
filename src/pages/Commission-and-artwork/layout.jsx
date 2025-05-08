@@ -120,22 +120,24 @@ const Cummission = () => (
             }
             body {
                 background-color: #d5e0f9;
-                color: #333;
+                color: #401F00;
                 line-height: 1.6;
             }
             .container {
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 2rem;
+                background-color: #d5e0f9;
             }
             .heading {
                 text-align: center;
                 padding: 3rem 0;
+                background-color: #d5e0f9;
             }
             .heading h1 {
                 font-size: 2.8rem;
                 margin-bottom: 1rem;
-                color: #2d3748;
+                color: #FF7E00;
                 position: relative;
                 display: inline-block;
             }
@@ -144,28 +146,28 @@ const Cummission = () => (
                 position: absolute;
                 width: 50%;
                 height: 4px;
-                background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
                 bottom: -10px;
                 left: 25%;
             }
             .heading p {
                 font-size: 1.2rem;
-                color: #718096;
+                color: #401F00;
                 max-width: 700px;
                 margin: 0 auto;
             }
             .service-section {
                 display: flex;
                 margin: 5rem 0;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                box-shadow: 0 10px 30px rgba(255, 126, 0, 0.05);
                 border-radius: 15px;
                 overflow: hidden;
-                background: white;
+                background: #FFFFFF;
                 position: relative;
             }
             .service-section:hover {
                 transform: translateY(-5px);
-                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 15px 35px rgba(255, 126, 0, 0.1);
                 transition: all 0.3s ease;
             }
             .service-image {
@@ -188,6 +190,7 @@ const Cummission = () => (
                 flex: 3;
                 padding: 3rem;
                 position: relative;
+                background: #FFFFFF;
             }
             .service-section:nth-child(even) {
                 flex-direction: row-reverse;
@@ -197,14 +200,14 @@ const Cummission = () => (
                 margin-bottom: 1.5rem;
                 position: relative;
                 display: inline-block;
-                color: #2d3748;
+                color: #FF5500;
             }
             .service-content h2::after {
                 content: '';
                 position: absolute;
                 width: 60px;
                 height: 3px;
-                background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
                 bottom: -8px;
                 left: 0;
             }
@@ -214,7 +217,7 @@ const Cummission = () => (
             }
             .service-content p {
                 margin-bottom: 1.5rem;
-                color: #718096;
+                color: #401F00;
                 font-size: 1.05rem;
             }
             .features-list {
@@ -224,11 +227,15 @@ const Cummission = () => (
                 display: flex;
                 align-items: center;
                 margin-bottom: 0.8rem;
+                background: #FFFFFF;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(255, 126, 0, 0.05);
             }
             .feature-icon {
                 width: 25px;
                 height: 25px;
-                background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -240,7 +247,7 @@ const Cummission = () => (
             .cta-button {
                 display: inline-block;
                 padding: 0.8rem 2rem;
-                background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
                 color: white;
                 border: none;
                 border-radius: 50px;
@@ -248,11 +255,11 @@ const Cummission = () => (
                 text-decoration: none;
                 margin-top: 1rem;
                 transition: all 0.3s ease;
-                box-shadow: 0 5px 15px rgba(106, 17, 203, 0.2);
+                box-shadow: 0 5px 15px rgba(255, 126, 0, 0.2);
             }
             .cta-button:hover {
                 transform: translateY(-3px);
-                box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+                box-shadow: 0 8px 20px rgba(255, 126, 0, 0.3);
             }
             .service-number {
                 position: absolute;
@@ -260,7 +267,7 @@ const Cummission = () => (
                 right: 2rem;
                 font-size: 5rem;
                 font-weight: 800;
-                color: rgba(106, 17, 203, 0.05);
+                color: rgba(255, 126, 0, 0.05);
                 z-index: 0;
             }
             .service-section:nth-child(even) .service-number {
@@ -306,7 +313,7 @@ const Cummission = () => (
                 }
             }
             @media (max-width: 576px) {
-                .heading h1 {
+                .heading h1 { 
                     font-size: 2rem;
                 }
                 .heading p {
