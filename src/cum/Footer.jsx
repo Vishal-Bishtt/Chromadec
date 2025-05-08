@@ -8,12 +8,12 @@ const Footer = () => {
     <footer
       className="footer"
       style={{
-        background: "#85a6ed",
-        color: "#fff",
+        background: "#401F00",
+        color: "#FFFAF5",
         padding: "32px 0 18px 0",
         textAlign: "center",
         marginTop: "40px",
-        borderTop: "2px solid #a3bdf2",
+        borderTop: "2px solid #FF7E00",
         position: "relative"
       }}
     >
@@ -29,7 +29,14 @@ const Footer = () => {
       >
         <a
           href="#"
-          style={{ color: "#fff", textDecoration: "none", fontWeight: 500 }}
+          style={{
+            color: "#FFFAF5",
+            textDecoration: "none",
+            fontWeight: 500,
+            transition: "color 0.3s ease",
+          }}
+          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
           onClick={e => {
             e.preventDefault();
             navigate("/terms-and-condition");
@@ -37,11 +44,42 @@ const Footer = () => {
         >
           Terms of Services
         </a>
-        <a href="#" style={{ color: "#fff", textDecoration: "none", fontWeight: 500 }}>Privacy Policy</a>
-        <a href="#" style={{ color: "#fff", textDecoration: "none", fontWeight: 500 }}>Career</a>
         <a
           href="#"
-          style={{ color: "#fff", textDecoration: "none", fontWeight: 500 }}
+          style={{
+            color: "#FFFAF5",
+            textDecoration: "none",
+            fontWeight: 500,
+            transition: "color 0.3s ease",
+          }}
+          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="#"
+          style={{
+            color: "#FFFAF5",
+            textDecoration: "none",
+            fontWeight: 500,
+            transition: "color 0.3s ease",
+          }}
+          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
+        >
+          Career
+        </a>
+        <a
+          href="#"
+          style={{
+            color: "#FFFAF5",
+            textDecoration: "none",
+            fontWeight: 500,
+            transition: "color 0.3s ease",
+          }}
+          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
           onClick={e => {
             e.preventDefault();
             navigate("/About-us");
@@ -54,7 +92,7 @@ const Footer = () => {
         className="footer-copy"
         style={{
           fontSize: "1rem",
-          color: "#fff",
+          color: "#FFCB99",
           marginBottom: "12px",
         }}
       >
@@ -99,4 +137,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;
