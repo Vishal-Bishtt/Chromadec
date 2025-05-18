@@ -38,7 +38,7 @@ const Layout = () => {
       if (serviceSection) {
         serviceSection.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 200); // Wait for sidebar to close
+    }, 200); 
   };
 
   return (
@@ -133,13 +133,12 @@ const Layout = () => {
               </div>
               <h1>Art classes</h1>
               <p>Unlock your kid's creative potential with our expert-led classes.
-                Designed for all skill levels, our sessions provide a supportive
+                 Designed for all skill levels, our sessions provide a supportive
                   environment to explore artistic expression and refine techniques.</p>
               <button className="service-btn">Join Classes</button>
             </div>
           </div>
           <div className="previousEvents">
-            {/* Space for logo */}
             <div className="previousEvents-logo-space"></div>
             <div className="previousEvents-content">
               <h1>PREVIOUS EVENTS</h1>

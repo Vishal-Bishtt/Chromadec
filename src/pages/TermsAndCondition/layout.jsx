@@ -18,7 +18,6 @@ const Terms = () => {
                 </ul>
             </p>
             <h3>3. CHANGES TO TERMS</h3>
-            
             <h3>4. USER RESPONSIBILITIES</h3>
             <h3>5. INTELLECTUAL PROPERTY RIGHTS</h3>
             <h3>6. PRIVACY POLICY</h3>
