@@ -8,13 +8,14 @@ const Footer = () => {
     <footer
       className="footer"
       style={{
-        background: "#401F00",
-        color: "#FFFAF5",
+        background: "#111111",
+        color: "#FFFFFF",
         padding: "32px 0 18px 0",
         textAlign: "center",
-        marginTop: "40px",
-        borderTop: "2px solid #FF7E00",
-        position: "relative"
+        marginTop: 0, // Changed from 40px to 0
+        borderTop: "2px solid #333333",
+        position: "relative",
+        fontFamily: "'Segoe UI', Arial, sans-serif"
       }}
     >
       <div
@@ -35,7 +36,7 @@ const Footer = () => {
             fontWeight: 500,
             transition: "color 0.3s ease",
           }}
-          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOver={(e) => (e.target.style.color = "#666666")}
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
           onClick={e => {
             e.preventDefault();
@@ -52,7 +53,7 @@ const Footer = () => {
             fontWeight: 500,
             transition: "color 0.3s ease",
           }}
-          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOver={(e) => (e.target.style.color = "#666666")}
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
         >
           Privacy Policy
@@ -65,7 +66,7 @@ const Footer = () => {
             fontWeight: 500,
             transition: "color 0.3s ease",
           }}
-          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOver={(e) => (e.target.style.color = "#666666")}
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
         >
           Career
@@ -78,7 +79,7 @@ const Footer = () => {
             fontWeight: 500,
             transition: "color 0.3s ease",
           }}
-          onMouseOver={(e) => (e.target.style.color = "#FF5500")}
+          onMouseOver={(e) => (e.target.style.color = "#666666")}
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
           onClick={e => {
             e.preventDefault();
@@ -92,7 +93,7 @@ const Footer = () => {
         className="footer-copy"
         style={{
           fontSize: "1rem",
-          color: "#FFCB99",
+          color: "#999999",
           marginBottom: "12px",
         }}
       >

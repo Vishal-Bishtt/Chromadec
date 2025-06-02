@@ -7,7 +7,7 @@ const AboutUsLayout = () => {
             display: 'flex',
             flexDirection: 'column',
             minHeight: '100vh',
-            background: '#d5e0f9',
+            background: '#FFFAF5',
             color: '#222',
             fontFamily: 'Poppins, sans-serif'
         }}>
@@ -20,7 +20,7 @@ const AboutUsLayout = () => {
                 width: '100%',
                 maxWidth: '100vw',
                 margin: '40px 0 0 0',
-                background: '#d5e0f9',
+                background: '#FFFAF5',
                 borderRadius: '18px',
                 boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.10)',
                 padding: '36px 5vw',
@@ -32,11 +32,11 @@ const AboutUsLayout = () => {
                     fontSize: '2.5rem',
                     letterSpacing: '2px',
                     marginBottom: '30px',
-                    color: '#3b5cb8',
-                    textShadow: '0 2px 8px #b6c8f3'
+                    color: '#111111',
+                    textShadow: '0 2px 8pxrgb(255, 255, 255)'
                 }}>OUR STORY</h1>
                 <h3 style={{
-                    color: '#4f6fdc',
+                    color: '#111111',
                     fontSize: '1.5rem',
                     marginTop: '24px'
                 }}>Mission</h3>
@@ -45,7 +45,7 @@ const AboutUsLayout = () => {
                     lineHeight: '1.8',
                     margin: '12px 0 24px 0',
                     textAlign: 'justify',
-                    background: '#d5e0f9',
+                    background: '#FFFAF5',
                     borderRadius: '8px',
                     padding: '14px 18px'
                 }}>
@@ -60,7 +60,7 @@ const AboutUsLayout = () => {
                     creativity thrives, and art becomes a powerful force for change.
                 </p>
                 <h3 style={{
-                    color: '#4f6fdc',
+                    color: '#111111',
                     fontSize: '1.5rem',
                     marginTop: '24px'
                 }}>Vision</h3>
@@ -69,7 +69,7 @@ const AboutUsLayout = () => {
                     lineHeight: '1.8',
                     margin: '12px 0 0 0',
                     textAlign: 'justify',
-                    background: '#d5e0f9',
+                    background: '#FFFAF5',
                     borderRadius: '8px',
                     padding: '14px 18px'
                 }}>

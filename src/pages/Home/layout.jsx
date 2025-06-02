@@ -5,7 +5,6 @@ import Header from '../../cum/Header';
 import './home.css';
 
 const Layout = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [currentWord, setCurrentWord] = useState("EXCELLENCE");
   const [isTransitioning, setIsTransitioning] = useState(false);
   const words = ["INNOVATION", "PERFECTION", "EXCELLENCE"];
@@ -25,22 +24,6 @@ const Layout = () => {
 
     return () => clearInterval(intervalId);
   }, []);
-
-  const handleAboutClick = () => {
-    setSidebarOpen(false);
-    navigate('about-us');
-  };
-
-  const handleServiceClick = () => {
-    setSidebarOpen(false);
-    setTimeout(() => {
-      const serviceSection = document.getElementById('service-section');
-      if (serviceSection) {
-        serviceSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 200); 
-  };
-
   return (
     <div className="app-home">
       <div className="main">
@@ -49,32 +32,6 @@ const Layout = () => {
         </div>
         {}
         <div>
-          <button
-            className={`menu-btn${sidebarOpen ? ' hide' : ''}`}
-            onClick={() => setSidebarOpen(true)}
-            aria-label="Open menu"
-          >
-            &#9776;
-          </button>
-
-          <div className={`sidebar${sidebarOpen ? ' open' : ''}`}>
-            <button
-              className="close-btn"
-              onClick={() => setSidebarOpen(false)}
-              aria-label="Close menu"
-            >
-              &times;
-            </button>
-            <div className="sidebar-buttons">
-            <button id="Home">Home</button>
-              <button id="About" onClick={handleAboutClick}>About</button>
-              <button id="Services" onClick={handleServiceClick}>Services</button>
-              <button id="Contact">Contact</button>
-            </div>
-          </div>
-
-          <div className={`sidebar-overlay${sidebarOpen ? ' show' : ''}`} onClick={() => setSidebarOpen(false)}></div>
-          
           <div className="tagline">
             <p>
               <span>WHERE ARTISTIC VISION MEETS</span>
@@ -125,7 +82,9 @@ const Layout = () => {
               <p>Immerse yourself in the world of art at our curated events.
                 From gallery openings to workshops, each occasion offers a
                   chance to connect with fellow art enthusiasts and experience the latest trends.</p>
-              <button className="service-btn">View Events</button>
+              <button className="service-btn"
+              onClick={() => navigate('/Art-Event')}
+              >View Events</button>
             </div>
             <div className="div3 service-card">
               <div className="service-img-circle">
@@ -135,7 +94,9 @@ const Layout = () => {
               <p>Unlock your kid's creative potential with our expert-led classes.
                  Designed for all skill levels, our sessions provide a supportive
                   environment to explore artistic expression and refine techniques.</p>
-              <button className="service-btn">Join Classes</button>
+              <button className="service-btn"
+              onClick={() => navigate('/Live-Class')}
+              >Join Classes</button>
             </div>
           </div>
           <div className="previousEvents">

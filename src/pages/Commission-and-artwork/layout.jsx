@@ -119,7 +119,7 @@ const Cummission = () => (
                 font-family: 'Poppins', sans-serif;
             }
             body {
-                background-color: #d5e0f9;
+                background-color: #FFFAF5;
                 color: #401F00;
                 line-height: 1.6;
             }
@@ -127,17 +127,17 @@ const Cummission = () => (
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 2rem;
-                background-color: #d5e0f9;
+                background-color: #FFFAF5;
             }
             .heading {
                 text-align: center;
                 padding: 3rem 0;
-                background-color: #d5e0f9;
+                background-color: #FFFAF5;
             }
             .heading h1 {
                 font-size: 2.8rem;
                 margin-bottom: 1rem;
-                color: #FF7E00;
+                color: #111111;
                 position: relative;
                 display: inline-block;
             }
@@ -146,7 +146,7 @@ const Cummission = () => (
                 position: absolute;
                 width: 50%;
                 height: 4px;
-                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
+                background: linear-gradient(90deg, #333333 0%, #111111 100%);
                 bottom: -10px;
                 left: 25%;
             }
@@ -200,14 +200,14 @@ const Cummission = () => (
                 margin-bottom: 1.5rem;
                 position: relative;
                 display: inline-block;
-                color: #FF5500;
+                color: #111111;
             }
             .service-content h2::after {
                 content: '';
                 position: absolute;
                 width: 60px;
                 height: 3px;
-                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
+                background: linear-gradient(90deg, #333333 0%, #111111 100%);
                 bottom: -8px;
                 left: 0;
             }
@@ -235,7 +235,7 @@ const Cummission = () => (
             .feature-icon {
                 width: 25px;
                 height: 25px;
-                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
+                background: linear-gradient(90deg, #333333 0%, #111111 100%);
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -247,7 +247,7 @@ const Cummission = () => (
             .cta-button {
                 display: inline-block;
                 padding: 0.8rem 2rem;
-                background: linear-gradient(90deg, #FF7E00 0%, #FF5500 100%);
+                background: linear-gradient(90deg, #333333 0%, #111111 100%);
                 color: white;
                 border: none;
                 border-radius: 50px;
@@ -260,6 +260,7 @@ const Cummission = () => (
             .cta-button:hover {
                 transform: translateY(-3px);
                 box-shadow: 0 8px 20px rgba(255, 126, 0, 0.3);
+                background: linear-gradient(90deg, #111111 0%, #333333 100%);
             }
             .service-number {
                 position: absolute;
