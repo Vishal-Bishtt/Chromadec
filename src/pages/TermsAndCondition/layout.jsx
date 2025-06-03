@@ -154,8 +154,8 @@ const Terms = () => {
                     }
                 }
                 @media (max-width: 480px) {
-                    div {
-                        padding: 0 20px !important;
+                    div[style*="maxWidth: '900px'"] {
+                        padding: 0 2px !important;
                     }
                     h1 {
                         font-size: 2rem !important;

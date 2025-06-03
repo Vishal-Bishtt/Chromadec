@@ -464,6 +464,8 @@
   .tagline {
     padding: 40px 4vw 30px 4vw;
     font-size: 1rem;
+    margin-top: -80px;
+    margin-bottom: -80px;
   }
   .service-img-circle {
     width: 80px;
@@ -575,5 +577,16 @@
   .about-section {
     height: 200px;
     padding: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tagline {
+    margin-top: -80px;
+    margin-bottom: -80px;
+  }
+
+  .welcome {
+    margin-top: -20px;
   }
 }
