@@ -457,9 +457,9 @@
   .tagline {
     padding: 40px 4vw 30px 4vw;
     font-size: 1rem;
-    margin-top: 0;  /* Changed from -80px */
-    margin-bottom: 0;  /* Changed from -80px */
-    height: 350px;  /* Further reduced height for better fit */
+    margin-top: 0;  
+    margin-bottom: 0;  
+    height: 350px;  
   }
   .service-img-circle {
     width: 80px;
@@ -576,10 +576,10 @@
 
 @media screen and (max-width: 600px) {
   .tagline {
-    margin-top: 0;  /* Changed from -80px */
-    margin-bottom: 0;  /* Changed from -80px */
-    padding: 20px 4vw;  /* Reduced padding */
-    height: 350px;  /* Further reduced height for better fit */
+    margin-top: 0;  
+    margin-bottom: 0;  
+    padding: 20px 4vw;  
+    height: 350px; 
   }
 
   .welcome {
