@@ -12,7 +12,7 @@ const Footer = () => {
         color: "#FFFFFF",
         padding: "32px 0 18px 0",
         textAlign: "center",
-        marginTop: 0, // Changed from 40px to 0
+        marginTop: 0, 
         borderTop: "2px solid #333333",
         position: "relative",
         fontFamily: "'Segoe UI', Arial, sans-serif"
@@ -98,42 +98,6 @@ const Footer = () => {
         }}
       >
         &copy; {new Date().getFullYear()} Chromadec. All rights reserved.
-      </div>
-      <div
-        className="footer-social"
-        style={{
-          display: "flex",
-          gap: "18px",
-          marginTop: "8px",
-          position: "absolute",
-          right: "32px",
-          top: "32px",
-        }}
-      >
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-        >
-          <img
-            src="/facebook.png"
-            alt="Facebook"
-            style={{ width: "32px", height: "32px", borderRadius: "8px", marginTop: "19px" }}
-          />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <img
-            src="/instagram.png"
-            alt="Instagram"
-            style={{ width: "68px", height: "68px", borderRadius: "8px" }}
-          />
-        </a>
       </div>
     </footer>
   );
