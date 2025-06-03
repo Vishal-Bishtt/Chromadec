@@ -105,7 +105,7 @@ const LiveArtClasses = () => {
         {/* Hero Section */}
         <section style={{
           background: 'linear-gradient(135deg, #000000 0%, #1f1f1f 100%)',
-          padding: '80px 20px',
+          padding: window.innerWidth < 768 ? '40px 16px' : '80px 20px',
           textAlign: 'center',
           color: 'white',
           position: 'relative',
@@ -202,7 +202,7 @@ const LiveArtClasses = () => {
 
         {/* Classes Section */}
         <section id="classes" style={{
-          padding: '80px 20px',
+          padding: window.innerWidth < 768 ? '40px 16px' : '80px 20px',
           maxWidth: '1200px',
           margin: '0 auto'
         }}>
@@ -228,9 +228,11 @@ const LiveArtClasses = () => {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-            gap: '32px',
-            padding: '0 20px'
+            gridTemplateColumns: window.innerWidth < 768 
+              ? '1fr' 
+              : 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: window.innerWidth < 768 ? '24px' : '32px',
+            padding: window.innerWidth < 768 ? '0 12px' : '0 20px'
           }}>
             {classes.map((classItem) => (
               <div
@@ -326,7 +328,7 @@ const LiveArtClasses = () => {
 
                 <div style={{
                   display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
+                  gridTemplateColumns: window.innerWidth < 480 ? '1fr' : '1fr 1fr',
                   gap: '16px',
                   marginBottom: '24px'
                 }}>
@@ -428,7 +430,7 @@ const LiveArtClasses = () => {
         {/* CTA Section */}
         <section style={{
           backgroundColor: '#1F2937',
-          padding: '80px 20px',
+          padding: window.innerWidth < 768 ? '40px 16px' : '80px 20px',
           textAlign: 'center',
           color: 'white'
         }}>

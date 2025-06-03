@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.75rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+  }
+
+  button {
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .class-card {
+    padding: 24px !important;
+  }
+
+  .class-info {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+}
