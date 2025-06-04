@@ -91,11 +91,9 @@ const Terms = () => {
                     
                     <h3>2. ACCEPTANCE OF TERMS</h3>
                     <p>By accessing this Website, you confirm that:
-                        <ul>
-                            <li>You are at least 18 years old or have the consent of a parent or guardian.</li>
-                            <li>You have read, understood, and agreed to these Terms.</li>
-                            <li>You comply with all applicable local, national, and international laws.</li>
-                        </ul>
+                        <p>You are at least 18 years old or have the consent of a parent or guardian.</p>
+                        <p>You have read, understood, and agreed to these Terms.</p>
+                        <p>You comply with all applicable local, national, and international laws.</p> 
                     </p>
                     
                     <h3>3. CHANGES TO TERMS</h3>
