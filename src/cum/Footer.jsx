@@ -1,9 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const navigate = useNavigate();
-
   return (
     <footer
       className="footer"
@@ -28,8 +25,8 @@ const Footer = () => {
           flexWrap: "wrap",
         }}
       >
-        <a
-          href="#"
+        <Link
+          to="/terms-and-condition"
           style={{
             color: "#FFFAF5",
             textDecoration: "none",
@@ -38,15 +35,11 @@ const Footer = () => {
           }}
           onMouseOver={(e) => (e.target.style.color = "#666666")}
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
-          onClick={e => {
-            e.preventDefault();
-            navigate("/terms-and-condition");
-          }}
         >
           Terms of Services
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/privacy-policy"
           style={{
             color: "#FFFAF5",
             textDecoration: "none",
@@ -57,9 +50,9 @@ const Footer = () => {
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
         >
           Privacy Policy
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/career"
           style={{
             color: "#FFFAF5",
             textDecoration: "none",
@@ -70,9 +63,9 @@ const Footer = () => {
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
         >
           Career
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/About-us"
           style={{
             color: "#FFFAF5",
             textDecoration: "none",
@@ -81,13 +74,9 @@ const Footer = () => {
           }}
           onMouseOver={(e) => (e.target.style.color = "#666666")}
           onMouseOut={(e) => (e.target.style.color = "#FFFAF5")}
-          onClick={e => {
-            e.preventDefault();
-            navigate("/About-us");
-          }}
         >
           About Us
-        </a>
+        </Link>
       </div>
       <div
         className="footer-copy"

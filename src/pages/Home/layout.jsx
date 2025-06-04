@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"; // Removed useNavigate
 import Footer from '../../cum/Footer';
 import Header from '../../cum/Header';
 import './home.css';
@@ -8,7 +8,6 @@ const Layout = () => {
   const [currentWord, setCurrentWord] = useState("EXCELLENCE");
   const [isTransitioning, setIsTransitioning] = useState(false);
   const words = ["INNOVATION", "PERFECTION", "EXCELLENCE"];
-  const navigate = useNavigate();
 
   useEffect(() => {
     let currentIndex = 0;
@@ -67,12 +66,9 @@ const Layout = () => {
                 Our talented artists work closely with you to create a 
                 one of a kind piece that reflects your unique style and 
                 sophistication.</p>
-              <button
-                className="service-btn"
-                onClick={() => navigate('/commission-and-artwork')}
-              >
+              <Link to="/commission-and-artwork" className="service-btn">
                 Learn More
-              </button>
+              </Link>
             </div>
             <div className="div2 service-card">
               <div className="service-img-circle">
@@ -82,9 +78,9 @@ const Layout = () => {
               <p>Immerse yourself in the world of art at our curated events.
                 From gallery openings to workshops, each occasion offers a
                   chance to connect with fellow art enthusiasts and experience the latest trends.</p>
-              <button className="service-btn"
-              onClick={() => navigate('/Art-Event')}
-              >View Events</button>
+              <Link to="/art-event" className="service-btn">
+                View Events
+              </Link>
             </div>
             <div className="div3 service-card">
               <div className="service-img-circle">
@@ -94,29 +90,9 @@ const Layout = () => {
               <p>Unlock your kid's creative potential with our expert-led classes.
                  Designed for all skill levels, our sessions provide a supportive
                   environment to explore artistic expression and refine techniques.</p>
-              <button className="service-btn"
-              onClick={() => navigate('/Live-Class')}
-              >Join Classes</button>
-            </div>
-          </div>
-          <div className="previousEvents">
-            <div className="previousEvents-logo-space"></div>
-            <div className="previousEvents-content">
-              <h1>PREVIOUS EVENTS</h1>
-              <div className="previousEvents-list">
-                <div className="previousEvents-item">
-                  <img src="/misyatem.png" alt="NI SYSTEMS" className="previousEvents-img" />
-                  <h4>NI SYSTEMS</h4>
-                </div>
-                <div className="previousEvents-item">
-                  <img src="/Nielsen_id6jSw3Gbd_1.png" alt="NEILSON MEDIA" className="previousEvents-img" />
-                  <h4>NEILSON MEDIA</h4>
-                </div>
-                <div className="previousEvents-item">
-                  <img src="/Sun_Pharma_logo.svg-e1743408361398-300x300.png" alt="SUN PHARMA" className="previousEvents-img" />
-                  <h4>SUN PHARMA</h4>
-                </div>
-              </div>
+              <Link to="/live-class" className="service-btn">
+                Join Classes
+              </Link>
             </div>
           </div>
           <div className="about-section">
